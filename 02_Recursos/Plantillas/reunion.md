@@ -1,0 +1,43 @@
+<% tp.file.rename(tp.date.now("YYYY-MM-DD")) %>
+# Reunión semanal: _<% tp.date.now("YYYY-MM-DD") %>_
+
+---
+## :LiCalendarFold: Agenda
+
+
+---
+## :LiFilePen: Resumen
+
+
+---
+## :FasNotesMedical: Notas adicionales
+
+
+---
+## Actividades solicitadas
+
+> [!info]- **Cómo crear una tarea**
+> 
+> 1. **Crea una lista de tareas básicas en formato markdown:**  
+>     Usa la sintaxis `- [ ]` para cada tarea.
+>     
+> 2. **Gestión de tareas con metadatos:**  
+>     El plugin `task` permite añadir metadatos para un mejor control de las tareas. Estos metadatos, que ayudan a organizar y visualizar las actividades en un tablero, se asignan utilizando la siguiente sintaxis y emojis:
+>     
+> 
+> - **Prioridad:**  
+>     Indica el nivel de prioridad usando uno de los siguientes emojis: 🔺, ⏫, 🔼, 🔽, ⏬️ (de la más alta a la más baja).
+>     
+> - **Fecha de inicio:**  
+>     Se especifica con el emoji 🛫 seguido del formato `YYYY-MM-DD`.
+>     
+> - **Fecha de entrega:**  
+>     Se indica con el emoji 📅 seguido del formato `YYYY-MM-DD`.
+>     
+> - **Persona(s) asignada(s):**  
+>     Utiliza la sintaxis `assigned::[[example_user]],[[example_user2]],...` para asignar usuarios.
+>     
+> 
+> A continuación, te dejamos un ejemplo que puedes copiar y adaptar según tus necesidades.
+
+- [ ] Descripción breve de tarea 🔺 🛫 2025-01-25 📅 2025-01-27 assigned::[[example_user]] 
