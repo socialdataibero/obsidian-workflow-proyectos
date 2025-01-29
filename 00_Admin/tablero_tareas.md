@@ -2,7 +2,7 @@
 
 > [!gen]- **Todas las tareas**
 > ```tasks
->folder includes 01_Proyecto
+>folder includes 01_Proyecto/Reuniones
 >```
 ## Hoy
 
@@ -10,7 +10,7 @@
 > ```tasks
 >due today
 > not done
-> folder includes 01_Proyecto
+> folder includes 01_Proyecto/Reuniones
 >```
 
 ## Mañana
@@ -19,13 +19,12 @@
 > ```tasks
 > due tomorrow
 > not done
-> folder includes 01_Proyecto
+> folder includes 01_Proyecto/Reuniones
 >```
-
 
 ## Tareas asignadas a [[example_user]]
 
 ```tasks
 filter by function task.description.includes("assigned::[[example_user]]")
-folder includes 01_Proyecto
+folder includes 01_Proyecto/Reuniones
 ```

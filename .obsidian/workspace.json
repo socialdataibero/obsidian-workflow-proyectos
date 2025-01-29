@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3663aba57b87c28a",
+        "id": "182ebbd2444f6e0c",
         "type": "tabs",
         "children": [
           {
-            "id": "67ffa87f7a6a0221",
+            "id": "baad9815f592ece0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -162,8 +162,14 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "67ffa87f7a6a0221",
+  "active": "baad9815f592ece0",
   "lastOpenFiles": [
+    "02_Recursos/Plantillas/notes.md",
+    "00_Admin/tablero_referencias.md",
+    "00_Admin/tablero_tareas.md",
+    "00_Admin/tablero_integrantes.md",
+    "00_Admin/tablero_fichas.md",
+    "README.md",
     "LICENSE",
     "01_Proyecto/Fichas_Tecnicas/example_sheet.md",
     "06_Glosario/example_term.md",
@@ -185,12 +191,7 @@
     "02_Recursos/Plantillas/doc_maestro.md",
     "02_Recursos/Plantillas/termino.md",
     "02_Recursos/Plantillas/ficha.md",
-    "02_Recursos/Plantillas/notes.md",
     "02_Recursos/Plantillas/estructura.md",
-    "01_Proyecto/Bitacoras/PROXIMAMENTE.md",
-    "07_Docs/fichas_tec.md",
-    "02_Recursos/Sin título.md",
-    "2025-01-28.md",
     "Markwhen/Markwhen 1-28-2025 21.25.40.mw",
     "Markwhen",
     "02_Recursos/Guias",
@@ -201,7 +202,6 @@
     "04_Assets/Images/zotero/zotero_bar.png",
     "04_Assets/Images/zotero",
     "04_Assets/Images",
-    "08_Utilidades",
     "04_Assets/favicon.svg",
     "04_Assets/Pasted image 20250121093448.png",
     "04_Assets/Pasted image 20250115180659.png",
