@@ -5,7 +5,7 @@
 
 | **Color**   | **Significado** |
 | ----------- | --------------- |
-| 🔵 Azul     |                 |
+| 🔵Azul      |                 |
 | 🟡 Amarillo |                 |
 | 🟢 Verde    |                 |
 | 🔴 Rojo     |                 |
@@ -13,3 +13,4 @@
 | 🐖 Rosa     |                 |
 | 🟠 Naranja  |                 |
 | ❕Gris       |                 |
+

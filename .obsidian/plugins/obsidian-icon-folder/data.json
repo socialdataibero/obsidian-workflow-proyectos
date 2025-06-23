@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": "#ef4044",
     "recentlyUsedIcons": [
-      "RiWordpressFill",
-      "RiOrganizationChart",
-      "RiCodeBoxFill",
-      "LiSheetsInBox",
-      "RiGuideLine"
+      "RiSlideshowFill",
+      "LiLogs",
+      "FasBatteryThreeQuarters",
+      "LiBookA",
+      "RiWordpressFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -56,6 +56,7 @@
   "01_Proyecto/Reuniones": "RiVideoChatFill",
   "02_Recursos/Guias": "RiGuideLine",
   "02_Recursos/Plantillas": "LiSheetsInBox",
-  "02_Recursos/Scripts": "RiCodeBoxFill",
-  "02_Recursos/Plantillas/termino.md": "RiWordpressFill"
+  "02_Recursos/Plantillas/termino.md": "RiWordpressFill",
+  "02_Recursos/Plantillas/bitacora.md": "LiLogs",
+  "01_Proyecto/Presentaciones": "RiSlideshowFill"
 }

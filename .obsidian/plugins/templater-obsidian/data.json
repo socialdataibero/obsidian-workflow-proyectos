@@ -11,7 +11,7 @@
   "auto_jump_to_cursor": false,
   "enable_system_commands": false,
   "shell_path": "",
-  "user_scripts_folder": "02_Recursos/Scripts",
+  "user_scripts_folder": "/",
   "enable_folder_templates": true,
   "folder_templates": [
     {
@@ -29,6 +29,14 @@
     {
       "folder": "06_Glosario",
       "template": "02_Recursos/Plantillas/termino.md"
+    },
+    {
+      "folder": "01_Proyecto/Bitacoras",
+      "template": "02_Recursos/Plantillas/bitacora.md"
+    },
+    {
+      "folder": "",
+      "template": ""
     }
   ],
   "enable_file_templates": false,

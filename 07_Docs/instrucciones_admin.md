@@ -4,7 +4,7 @@
 ## :FasRegistered: Registro como Integrante
 
 - **Acción:** Regístrate como integrante del proyecto. 
-- **Instrucciones:** Sigue las [instrucciones de registro](app://obsidian.md/07_Docs/registro_integrante).
+- **Instrucciones:** Sigue las [instrucciones de registro](07_Docs/registro_integrante).
 
 ⚠️ **Nota:** Asegúrate de completar este paso antes de continuar con las demás tareas.
 

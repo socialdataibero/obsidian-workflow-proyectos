@@ -1,8 +1,17 @@
-<% tp.file.rename(tp.date.now("YYYY-MM-DD")) %>
-# Reunión semanal: _<% tp.date.now("YYYY-MM-DD") %>_
+<% tp.file.rename(tp.date.now("YYYY-MM-DD_HH-mm")) %>
+# Reunión semanal: _<% tp.date.now("YYYY-MM-DD HH:mm") %>_
+
+#proyecto #topico #temas-a-tratar
 
 ---
-## :LiCalendarFold: Agenda
+## :LiCircleUser: Participantes
+
+- [[example_user]]
+
+
+---
+## :LiHourglass: Minuta
+
 
 
 ---
@@ -14,7 +23,7 @@
 
 
 ---
-## Actividades solicitadas
+## Actividades solicitadas / Acuerdos
 
 > [!info]- **Cómo crear una tarea**
 > 

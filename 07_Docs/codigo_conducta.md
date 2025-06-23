@@ -40,5 +40,4 @@ Como parte de la _Universidad Iberoamericana_, **Socialdata Ibero** se adhiere a
 >[!aut]- Respeta la autoría del trabajo
 >Valoramos el respeto a la autoría y la correcta atribución de los méritos. Utilizaremos la taxonomía CRediT (Contributor Roles Taxonomy) para asignar roles claros en la autoría de trabajos colaborativos. Puedes consultar más información en [https://credit.niso.org/](https://credit.niso.org/). Esperamos honestidad y precisión al describir los roles, de manera que cada persona reciba el reconocimiento adecuado por su contribución. Atribuir el crédito de manera justa es fundamental para fomentar la confianza y el respeto mutuo en nuestras colaboraciones.
 
-
 Las violaciones al Código de Conducta deben ser reportadas llenando el [siguiente formulario de reporte](https://forms.gle/1StkPQFkjuYq5rks6). Las quejas pueden hacerse de manera anónima y serán visibles únicamente para los miembros del comité encargados de resolución de conflictos.**

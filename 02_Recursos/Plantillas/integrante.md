@@ -44,7 +44,7 @@ creation_date: "<% tp.file.creation_date('dddd Do MMMM YYYY HH:mm') %>"
 
 ## ¡Queremos conocerte mejor!
 
-> [!important]+ Este espacio es todo tuyo
+> [!important]- Este espacio es todo tuyo
 > - ¿Cuáles son tus intereses y pasatiempos?
 > - ¿Cómo prefieres que nos refiramos a ti? (nombre, pronombres, etc.)
 > - Cualquier otro detalle que quieras compartir con nosotros.

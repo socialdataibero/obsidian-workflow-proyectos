@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "182ebbd2444f6e0c",
+        "id": "4617e5704f3026ac",
         "type": "tabs",
         "children": [
           {
-            "id": "baad9815f592ece0",
+            "id": "2fbdfc3f22022d51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "01_Proyecto/Bitacoras/2025-06-23_16-41_bitacora_example_user.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "2025-06-23_16-41_bitacora_example_user"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de archivos"
@@ -77,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 239.5110321044922
   },
   "right": {
     "id": "59f3471cdd536dbd",
@@ -162,46 +163,46 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "baad9815f592ece0",
+  "active": "e9badd30b0369186",
   "lastOpenFiles": [
-    "02_Recursos/Plantillas/notes.md",
-    "00_Admin/tablero_referencias.md",
-    "00_Admin/tablero_tareas.md",
-    "00_Admin/tablero_integrantes.md",
-    "00_Admin/tablero_fichas.md",
+    "01_Proyecto/Bitacoras/2025-06-23_16-42_bitacora_example_user.md",
+    "01_Proyecto/Bitacoras/2025-06-23_16-41_bitacora_example_user.md",
+    "05_Integrantes/Example_User.md",
+    "05_Integrantes/example_user.md",
+    "05_Integrantes/Wilfrido Antonio Gómez Arias.md",
+    "01_Proyecto/Bitacoras/2025-06-23_16-37_bitacora_armando_huitzilt_rodríguez.md",
+    "02_Recursos/Plantillas/bitacora.md",
+    "01_Proyecto/Presentaciones",
+    "02_Recursos/Plantillas/reunion.md",
+    "01_Proyecto/Bitacoras/PROXIMAMENTE.md",
+    "02_Recursos/Guias/guia_obsidian.md",
+    "02_Recursos/Guias/guia_markdown.md",
     "README.md",
-    "LICENSE",
-    "01_Proyecto/Fichas_Tecnicas/example_sheet.md",
-    "06_Glosario/example_term.md",
-    "03_Code/example.ipynb",
-    "01_Proyecto/Fichas_Tecnicas/Sin título.md",
-    "01_Proyecto/Bibliografia/Sin título.md",
-    "07_Docs/reuniones_doc.md",
-    "07_Docs/glosario_doc.md",
-    "07_Docs/registro_integrante.md",
-    "07_Docs/referencias.md",
-    "07_Docs/instrucciones_admin.md",
-    "07_Docs/fichas_tecnicas.md",
-    "07_Docs/codigo_conducta.md",
-    "07_Docs/codigo_colores.md",
     "07_Docs/anotaciones_referencia.md",
-    "Doc_Maestro.md",
-    "07_Docs/codico_colores.md",
-    "01_Proyecto/Reuniones/2025-01-29.md",
+    "07_Docs/codigo_colores.md",
+    "07_Docs/estilos_tablas.md",
     "02_Recursos/Plantillas/doc_maestro.md",
+    "01_Proyecto/Bibliografia/cortes1995.md",
+    "01_Proyecto/Fichas_Tecnicas/example_sheet.md",
+    "01_Proyecto/Reuniones/2025-06-23_00-26.md",
+    "01_Proyecto/Reuniones/2025-06-23_00-25.md",
+    "01_Proyecto/Reuniones/2025-01-28.md",
     "02_Recursos/Plantillas/termino.md",
-    "02_Recursos/Plantillas/ficha.md",
-    "02_Recursos/Plantillas/estructura.md",
+    "01_Proyecto/Reuniones/2025-06-23_00-20.md",
+    "01_Proyecto/Reuniones/2025-06-23.md",
+    "01_Proyecto/Reuniones/Sin título 1.md",
+    "02_Recursos/Scripts/example_script.md",
+    "02_Recursos/Scripts",
+    "01_Proyecto/Fichas_Tecnicas/Sin nombre",
+    "01_Proyecto/Fichas_Tecnicas/Cursos",
+    "01_Proyecto/Fichas_Tecnicas/Tutoriales",
+    "01_Proyecto/Fichas_Tecnicas/Demos",
+    "LICENSE",
+    "03_Code/example.ipynb",
     "Markwhen/Markwhen 1-28-2025 21.25.40.mw",
     "Markwhen",
-    "02_Recursos/Guias",
-    "01_Proyecto/Bibliografia",
-    "01_Referencias",
-    "01_Proyecto/Biblografia",
     "04_Assets/Images/zotero/zotero_config.png",
     "04_Assets/Images/zotero/zotero_bar.png",
-    "04_Assets/Images/zotero",
-    "04_Assets/Images",
     "04_Assets/favicon.svg",
     "04_Assets/Pasted image 20250121093448.png",
     "04_Assets/Pasted image 20250115180659.png",

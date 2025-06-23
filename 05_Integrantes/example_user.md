@@ -1,13 +1,13 @@
 ---
-full_name: "[[example_user]]"
+full_name: "[[Example_User]]"
 phone: "11 22 33 44 55"
 github: "github_example_user"
 zotero: "zotero_example_user"
 mattermost: "@mattermost_example_user"
-email: "example_user@gmail.com"
+email: ""
 availability: "Lunes a Viernes de 9:00 am - 6:00 pm"
-role: "Rol example user"
-creation_date: "domingo 26º enero 2025 20:44"
+role: "Investigador y desarrollador python"
+creation_date: "lunes 23º junio 2025 16:40"
 ---
 
 ---
@@ -44,7 +44,7 @@ creation_date: "domingo 26º enero 2025 20:44"
 
 ## ¡Queremos conocerte mejor!
 
-> [!important]+ Este espacio es todo tuyo
+> [!important]- Este espacio es todo tuyo
 > - ¿Cuáles son tus intereses y pasatiempos?
 > - ¿Cómo prefieres que nos refiramos a ti? (nombre, pronombres, etc.)
 > - Cualquier otro detalle que quieras compartir con nosotros.

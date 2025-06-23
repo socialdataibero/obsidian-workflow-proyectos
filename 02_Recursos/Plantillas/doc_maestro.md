@@ -33,7 +33,7 @@ await tp.file.rename(defaultName);
 ## :LiBookHeart: Código de conducta
 
 > [!cond]+ Antes de seguir 
-> ¡Lee el [código de conducta]()! Es importante para asegurar una buena convivencia en nuestro entorno de trabajo :LiHeartHandshake:.
+> ¡Lee el [código de conducta](07_Docs/codigo_conducta.md)! Es importante para asegurar una buena convivencia en nuestro entorno de trabajo :LiHeartHandshake:.
 
 ---
 ## :RiProjectorFill: Acerca del proyecto
@@ -75,7 +75,7 @@ Para cada pilar, existe una plantilla específica destinada a normalizar la estr
 > [!orange]- Enlaces a plantillas
 > 1. **Bibliografía**
 >    - Clasifica la información de las referencias según el [código de color](07_Docs/codigo_colores).
->    - Utiliza la plantilla [anotaciones_referencia](07_Docs/anotaciones_referencias.md) para extraer y organizar todas las anotaciones de los archivos `.pdf`.
+>    - Utiliza la plantilla [anotaciones_referencia](07_Docs/anotaciones_referencia.md) para extraer y organizar todas las anotaciones de los archivos `.pdf`.
 > 2. **Fichas técnicas**
 >    - Usa la información previamente clasificada para redactar fichas técnicas con la plantilla [fichas_tecnicas](07_Docs/fichas_tecnicas).
 > 3. **Reuniones**
@@ -85,7 +85,7 @@ Basado en esto, el flujo sugerido es el siguiente:
 
 > [!tip]- Flujo sugerido
 > 1. **Lectura y clasificación**
->    - Leer las referencias en Zotero y clasificar la información en el `.pdf` de acuerdo con el [código de color](https://chatgpt.com/c/97_Docs/codigo_colores).
+>    - Leer las referencias en Zotero y clasificar la información en el `.pdf` de acuerdo con el [código de color](07_Docs/codigo_colores.md).
 > 2. **Creación de anotaciones**
 >    - Generar una nota utilizando la plantilla de anotaciones y vaciar en ella la información destacada durante la lectura del `.pdf`.
 > 3. **Redacción de fichas técnicas**
@@ -146,7 +146,7 @@ Este flujo de trabajo asegura una gestión ordenada de la información, facilita
 Durante la redacción de tus notas (fichas técnicas fundamentalmente) puedes requerir distintas herramientas. Consulta los siguientes manuales para saber cómo utilizar estos instrumentos:
 
 > [!purple]- **Rereferencias**
-> Consulta [¿Cómo citar?](app://obsidian.md/07_Docs/referencias.md) para aprender sobre el manejo de referencias en el proyecto.
+> Consulta [¿Cómo citar?](07_Docs/referencias.md) para aprender sobre el manejo de referencias en el proyecto.
 
 > [!words]+ **Glosario**
-> Consulta la documentación del [glosario](07_Docs/glosario_doc,md) para saber cómo utilizarlo en el flujo de trabajo. 
+> Consulta la documentación del [glosario](07_Docs/glosario_doc.md) para saber cómo utilizarlo en el flujo de trabajo. 
