@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": "#ef4044",
     "recentlyUsedIcons": [
+      "LiBookText",
       "RiSlideshowFill",
       "LiLogs",
       "FasBatteryThreeQuarters",
-      "LiBookA",
-      "RiWordpressFill"
+      "LiBookA"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,5 +58,6 @@
   "02_Recursos/Plantillas": "LiSheetsInBox",
   "02_Recursos/Plantillas/termino.md": "RiWordpressFill",
   "02_Recursos/Plantillas/bitacora.md": "LiLogs",
-  "01_Proyecto/Presentaciones": "RiSlideshowFill"
+  "01_Proyecto/Presentaciones": "RiSlideshowFill",
+  "01_Proyecto/Revision_Literatura": "LiBookText"
 }
