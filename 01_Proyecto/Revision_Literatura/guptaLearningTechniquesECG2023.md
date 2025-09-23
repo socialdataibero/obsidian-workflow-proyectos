@@ -1,65 +1,28 @@
 ---
-title: "{{title | replace('"',"'")}}"
-{%- set camelRegex = r/([a-z])([A-Z])/g %}
-{%- for type, creators in creators | groupby("creatorType") %} 
-{% if creators.length > 1 %}{{type | replace(camelRegex, "$1 $2") | lower | trim}}s:{%- for creator in creators %}{% if creator.name %}
-- {{creator.name}}{% else%}
-- {{creator.firstName}} {{creator.lastName}} {% endif %}{%- endfor %} {% else -%}
-{{type | replace(camelRegex, "$1-$2") | lower | trim}}:{%- for creator in creators %}{% if creator.name %} "{{creator.name}}"{% else%} "{{creator.firstName}} {{creator.lastName}}"{% endif -%}{%- endfor -%}{% endif -%}{% endfor %}
-description: "<%* const desc = await tp.system.prompt('Ingrese un resumen breve del texto:'); tR += desc; %>"
+title: "Learning Techniques of ECG Arrhythmia Classification: A Review"
+authors:
+  - T. Raghavendra Gupta
+  - D. Uma Nandhini
+description:
 category: []
-year: {% if date %}{{date | format("YYYY")}}{% endif %}
-status: "Por revisar🔴" 
-priority: "Media🔵"
+year: 2023
+status: Por revisar🔴
+priority: Media🔵
 tags:
   - revisión-literatura
   - investigación
-creation_date: <% tp.file.creation_date("dddd Do MMMM YYYY HH:mm") %>
-temas_principales: "<%* const temas = await tp.system.prompt('Ingrese los temas principales:'); tR += temas; %>"
-tipo_texto: "<%* const tipo = await tp.system.prompt('Tipo de texto (artículo, tesis, libro, etc.):'); tR += tipo; %>"
-revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo del revisor:'); tR += revisor; %>"
-
+creation_date: lunes 22º septiembre 2025 20:52
+temas_principales: ""
+tipo_texto: ""
+revisor: ""
 ---
-
-{%- set authorsList = [] -%}
-{%- for c in creators -%}
-    {%- if c.lastName -%}
-        {%- set authorsList = authorsList.concat([c.lastName]) -%}
-    {%- elif c.name -%}
-        {%- set authorsList = authorsList.concat([c.name]) -%}
-    {%- endif -%}
-{%- endfor -%}
-
-{# Crear la parte del autor de la cita #}
-{%- set authorPart = "" -%}
-{%- if authorsList.length > 2 -%}
-    {%- set authorPart = authorsList[0] ~ " et al." -%}
-{%- elif authorsList.length == 2 -%}
-    {%- set authorPart = authorsList[0] ~ " & " ~ authorsList[1] -%}
-{%- elif authorsList.length == 1 -%}
-    {%- set authorPart = authorsList[0] -%}
-{%- endif -%}
-
-{# Extraer el año si la fecha existe #}
-{%- set year = "" -%}
-{%- if date -%}
-    {%- set year = date | format("YYYY") -%}
-{%- endif -%}
-
-{# Unir todo en la cita final #}
-{%- set apaCitation = authorPart -%}
-{%- if authorPart and year -%}
-    {%- set apaCitation = apaCitation ~ ", " ~ year -%}
-{%- endif -%}
-
-{{ "\n" }}
 
 
 > [!info]- ¿Cómo usar esta plantilla?
 > Esta plantilla está diseñada para sistematizar la revisión de literatura académica. Complete cada sección con la información relevante del texto analizado.
 
 ---
-## :RiBook2Fill: Control de avances
+## :RiBook2Fill: Control de metadatos
 
 - **¡Controla el estatus y la relevancia de tu revisión dinámicamente!**
 
@@ -74,7 +37,7 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 > ```
 
 ---
-# :FasFilePen: Ficha de revisión: {{ title }}
+# :FasFilePen: Ficha de revisión: Learning Techniques of ECG Arrhythmia Classification: A Review
 
 ---
 ## :RiProgress2Fill: Estado de compleción
@@ -101,43 +64,29 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 ### Cita APA 7 completa
 
 ```
-{% for c in creators -%}
-{%- if loop.first -%}
-{%- if c.lastName -%}{{c.lastName}}, {{c.firstName | truncate(1, true, '') | upper}}.
-{%- else -%}{{c.name}}{%- endif -%}
-{%- elif loop.last and loop.index == 2 -%}
-{%- if c.lastName -%}, & {{c.lastName}}, {{c.firstName | truncate(1, true, '') | upper}}.
-{%- else -%}, & {{c.name}}{%- endif -%}
-{%- elif loop.last -%}
-{%- if c.lastName -%}, & {{c.lastName}}, {{c.firstName | truncate(1, true, '') | upper}}.
-{%- else -%}, & {{c.name}}{%- endif -%}
-{%- else -%}
-{%- if c.lastName -%}, {{c.lastName}}, {{c.firstName | truncate(1, true, '') | upper}}.
-{%- else -%}, {{c.name}}{%- endif -%}
-{%- endif -%}
-{%- endfor %} ({{year}}). {% if itemType == "bookSection" %}{{title}}. En {{bookTitle}}{% else %}{{title}}{% endif %}. {{publisher}}{% if DOI %}. https://doi.org/{{DOI}}{% endif %}
+Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classification: A Review. IEEE. https://doi.org/10.1109/ICCCEE55951.2023.10424554
 ```
 
 ### Cita APA 7 en texto
 
 ```
-({{ apaCitation }})
+(Gupta & Nandhini, 2023)
 ```
 
 ### Enlace a PDF en Zotero
 
-- l! **Enlace en Zotero:** [Abrir en Zotero]({{desktopURI}})
+- l! **Enlace en Zotero:** [Abrir en Zotero](zotero://select/library/items/MJEY5YJT)
 
 ---
 ## :LiFileText: Resumen del texto
 
 
-{% if abstractNote %}
+
 ### Resumen original 
 
 >[!abstract]- 
->{{ abstractNote }}
->{% endif %}
+>Predicting cardiac arrhythmia for early detection of various cardiac conditions using Electrocardiogram (ECG) is a critical research area that can help to prevent adverse heart problems or even death. Cardiac Arrhythmia is a life threatening disease which can be effectively detected by analyzing the abnormalities in the heartbeat. Automated classification of the abnormal heartbeats using patterns and incidence based on non-linear dynamics of RR interval is a challenge for developing new algorithms. Analyzing the morphological features and quasi periodic nature of ECG to recognize the presence and lack of arrhythmia needs a complete survey of the work that is in existence. Several works have implemented in the recent years to automatically detect and classify the ECG signals using traditional algorithms as well as advanced machine learning algorithms. In this paper, we have presented a survey on those algorithms and its segmentation methods, preprocessing techniques and its feature descriptions. Classification challenges and limitations of existing approaches for arrhythmia, have been reviewed and deliberated. Here, our intention is to focus on classification of arrhythmia with highly assured outcomes that can be employed in decision support systems used in diagnosis. Furthermore, it display those results and the possible scope of machine learning methods as the most preferred way to predict cardiovascular diseases (CVD) based on the analysis of cardiac arrhythmia using ECG is presented as the outcome of the survey. The paper address the need of prediction of life threatening diseases like CVD by suggesting suitable methods to have a positive impact on clinical practices and improves the outcome of medical diagnostics.
+>
 
 ### Resumen personal:
 
@@ -283,24 +232,39 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 > > Asegúrate de que todas las citas estén resaltadas en color **ROSA** para poder ser importadas aquí.
 
 > [!pink]- Citas textuales
-> {% for annotation in annotations %}
-> {% if annotation.color == "#e56eee" %}
-> - _"{{ annotation.annotatedText }} {% if annotation.pageLabel %}"_ [({{ apaCitation }}, p. {{ annotation.pageLabel }})]({{ annotation.desktopURI }})
->   {% endif %}
+> 
+> 
+> - _"Predicting cardiac arrhythmia for early detection of various cardiac conditions using Electrocardiogram (ECG) "_ [(Gupta & Nandhini, 2023, p. 1)](zotero://open-pdf/library/items/583A4KD2?page=1&annotation=3A433E8I)
 >   
->   {% if annotation.tags and annotation.tags.length > 0 %}
->   > **Tags**:
->   {% for t in annotation.tags %}
->   #{{ t.tag | replace(r/\s+/g,"-") }}{% if not loop.last %}, {% endif %}
->   {% endfor %}
->   {% endif %}
+>   
+>   
 >
->   {% if annotation.comment %}
->   > **Comentarios**: {{ annotation.comment }}
->   {% endif %}
+>   
+>   > **Comentarios**: Comentarios de ejemplo
+>   
 >
-> {% endif %}
-> {% endfor %}
+> 
+> 
+> 
+> - _"Additionally, it indicates whether there has been a heart attack or enlargement due to hypertension. Conversely, the presence of asymptomatic blockages "_ [(Gupta & Nandhini, 2023, p. 1)](zotero://open-pdf/library/items/583A4KD2?page=1&annotation=XIFIE72Y)
+>   
+>   
+>   
+>
+>   
+>
+> 
+> 
+> 
+> - _"Every wave is important since it shows particular event in the functioning of heart. QRS complex, the largest part of the ECG signal and the most important, is used to indicate life-threatening diseases, including those that can lead to death. "_ [(Gupta & Nandhini, 2023, p. 1)](zotero://open-pdf/library/items/583A4KD2?page=1&annotation=94FJHT23)
+>   
+>   
+>   
+>
+>   
+>
+> 
+> 
 
 
 ---
@@ -330,6 +294,6 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 ---
 ## :LiCalendar: Metadatos de revisión
 
-- **Fecha de última actualización:** <% tp.file.last_modified_date("dddd Do MMMM YYYY") %>
+- **Fecha de última actualización:** lunes 22º septiembre 2025
 - **Revisor:** `= this.revisor`
 - **Versión de la ficha:** 1.0

@@ -33,10 +33,6 @@
     {
       "folder": "01_Proyecto/Bitacoras",
       "template": "02_Recursos/Plantillas/bitacora.md"
-    },
-    {
-      "folder": "01_Proyecto/Revision_Literatura",
-      "template": "02_Recursos/Plantillas/ficha_revision_literatura.md"
     }
   ],
   "enable_file_templates": false,

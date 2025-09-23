@@ -98,12 +98,6 @@ asigned: [[example_user]]
 
 - l! **Enlace en Zotero:** [Abrir en Zotero]({{desktopURI}})
 
-{% if abstractNote %}
-## :LiCircleMinus: Resumen
-
->[!abstract]- 
->{{ abstractNote }}
->{% endif %}
 
 ## :RiColorFilterFill: Anotaciones clasificadas por color
 
