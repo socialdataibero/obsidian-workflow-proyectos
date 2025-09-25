@@ -1,28 +1,31 @@
 ---
-title: "Learning Techniques of ECG Arrhythmia Classification: A Review"
+
+title: "Learning Techniques of ECG Arrhythmia Classification: A Review" 
 authors:
-  - T. Raghavendra Gupta
-  - D. Uma Nandhini
-description:
+- T. Raghavendra Gupta 
+- D. Uma Nandhini  
+description: "null"
 category: []
 year: 2023
-status: Por revisar🔴
-priority: Media🔵
+status: "Por revisar🔴" 
+priority: "Media🔵"
 tags:
   - revisión-literatura
   - investigación
-creation_date: lunes 22º septiembre 2025 20:52
+creation_date: jueves 25º septiembre 2025 11:19
 temas_principales: ""
-tipo_texto: ""
-revisor: ""
+revisor: "example_user"
+
 ---
+
 
 
 > [!info]- ¿Cómo usar esta plantilla?
 > Esta plantilla está diseñada para sistematizar la revisión de literatura académica. Complete cada sección con la información relevante del texto analizado.
+> Para mayor información, consulta [[ficha_revision_literatura_doc]]
 
 ---
-## :RiBook2Fill: Control de metadatos
+## :RiBook2Fill: Control de avances
 
 - **¡Controla el estatus y la relevancia de tu revisión dinámicamente!**
 
@@ -43,17 +46,15 @@ revisor: ""
 ## :RiProgress2Fill: Estado de compleción
 
 > [!success]- **Secciones completadas**
-> 1. [ ] Referencia bibliográfica
-> 2. [ ] Resumen del texto
-> 3. [ ] Información básica
-> 4. [ ] Planteamiento central
-> 5. [ ] Objetivos y preguntas
-> 6. [ ] Marco conceptual
-> 7. [ ] Autores citados
-> 8. [ ] Conclusiones
-> 9. [ ] Relación con la investigación
-> 10. [ ] Análisis contextual
-> 11. [ ] Citas relevantes
+> 1. [ ] Resumen del texto
+> 2. [ ] Información básica
+> 3. [ ] Objetivos y preguntas
+> 4. [ ] Marco conceptual
+> 5. [ ] Autores citados
+> 6. [ ] Conclusiones
+> 7. [ ] Relación con la investigación
+> 8. [ ] Análisis contextual
+> 9. [ ] Citas relevantes
 
 ---
 ## :LiBookmark: Referencia bibliográfica
@@ -78,8 +79,8 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 - l! **Enlace en Zotero:** [Abrir en Zotero](zotero://select/library/items/MJEY5YJT)
 
 ---
-## :LiFileText: Resumen del texto
 
+## :LiInfo: Información básica del documento
 
 
 ### Resumen original 
@@ -90,31 +91,29 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 
 ### Resumen personal:
 
-> [!info]- **Instrucciones**
-> Proporcione un resumen ejecutivo de 200-300 palabras sobre qué aborda el texto principal.
+
 
 ### Palabras clave:
 - 
 - 
 - 
 
----
-## :LiInfo: Información básica del documento
-
 ### Tema(s) principal(es):
 `= this.temas_principales`
 
 ### Tipo de texto:
-`= this.tipo_texto`
+
+conferencePaper
+
 
 ### Idioma original:
+
+en
+
 
 
 ---
 ## :LiTarget: Planteamiento central del texto
-
-> [!info]- **Instrucciones**
-> Describa la tesis principal o argumento central que desarrolla el autor/a.
 
 ### Tesis principal:
 
@@ -124,8 +123,6 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 ---
 ## :LiSearch: Objetivos y/o preguntas de investigación
 
-> [!info]- **Instrucciones**
-> Liste los objetivos principales y las preguntas de investigación que guían el texto.
 
 ### Objetivo general:
 
@@ -143,8 +140,6 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 ---
 ## :LiNetwork: Categorías y/o conceptos centrales
 
-> [!info]- **Instrucciones**
-> Identifique y defina los conceptos clave que estructuran el texto.
 
 ### Conceptos principales:
 
@@ -162,9 +157,6 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 ---
 ## :LiUsers: Autores/as que retoma para hablar del tema central
 
-> [!info]- **Instrucciones**
-> Liste los autores principales citados y cómo contribuyen al argumento.
-
 ### Autores fundamentales:
 
 | Autor/a | Obra citada | Aporte al argumento |
@@ -176,8 +168,6 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 ---
 ## :LiCheckSquare: Conclusiones y/o resultados de la investigación
 
-> [!info]- **Instrucciones**
-> Sintetice las conclusiones principales y hallazgos del texto.
 
 ### Conclusiones principales:
 1. 
@@ -191,9 +181,6 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 
 ---
 ## :LiLink: Relación del artículo con el tema general de la investigación
-
-> [!info]- **Instrucciones**
-> Explique cómo este texto se relaciona con su investigación actual.
 
 ### Relevancia para mi investigación:
 
@@ -209,9 +196,6 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 ## :LiMessageSquare: Preguntas y comentarios al texto
 
 ### ¿En qué contexto se sitúa el texto?
-
-> [!info]- **Instrucciones**
-> Describa el contexto histórico, geográfico, político o académico del texto.
 
 #### Contexto histórico:
 
@@ -238,6 +222,11 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 >   
 >   
 >   
+>   > **Tags**:
+>   
+>   #DL
+>   
+>   
 >
 >   
 >   > **Comentarios**: Comentarios de ejemplo
@@ -252,12 +241,21 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 >   
 >
 >   
+>   > **Comentarios**: Considerar para revisión
+>   
 >
 > 
 > 
 > 
 > - _"Every wave is important since it shows particular event in the functioning of heart. QRS complex, the largest part of the ECG signal and the most important, is used to indicate life-threatening diseases, including those that can lead to death. "_ [(Gupta & Nandhini, 2023, p. 1)](zotero://open-pdf/library/items/583A4KD2?page=1&annotation=94FJHT23)
 >   
+>   
+>   
+>   > **Tags**:
+>   
+>   #ML, 
+>   
+>   #SVM
 >   
 >   
 >
@@ -269,9 +267,6 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 
 ---
 ## :LiPencil: Notas adicionales y reflexiones personales
-
-> [!info]- **Instrucciones**
-> Espacio libre para reflexiones, ideas emergentes o conexiones con otros textos.
 
 ### Reflexiones:
 
@@ -294,6 +289,6 @@ Gupta, T., & Nandhini, D. (2023). Learning Techniques of ECG Arrhythmia Classifi
 ---
 ## :LiCalendar: Metadatos de revisión
 
-- **Fecha de última actualización:** lunes 22º septiembre 2025
+- **Fecha de última actualización:** jueves 25º septiembre 2025
 - **Revisor:** `= this.revisor`
 - **Versión de la ficha:** 1.0

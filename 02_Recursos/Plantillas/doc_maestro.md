@@ -61,14 +61,16 @@ gantt
     Revisión            :         des4, 02-07, 5d
     Entrega             :         des5, 02-15, 1d
 ```
+
 ---
+
 ## :LiWorkflow: Flujo de trabajo
 
 La carpeta principal, **`01_Proyecto`**, concentra toda la información del proyecto organizada en tres pilares fundamentales:
 
-- **Investigación** (`Bibliografia`)
+- **Investigación** (`Bibliografia` y `Revision_Literatura`)
 - **Redacción** (`Fichas_Tecnicas`)
-- **Acuerdos de reuniones** (`reuniones`)
+- **Acuerdos de reuniones** (`Reuniones`)
 
 Para cada pilar, existe una plantilla específica destinada a normalizar la estructura de las notas y facilitar el manejo de la información. Puedes consultar el uso detallado de cada plantilla en los siguientes enlaces:
 
@@ -76,8 +78,9 @@ Para cada pilar, existe una plantilla específica destinada a normalizar la estr
 > 1. **Bibliografía**
 >    - Clasifica la información de las referencias según el [código de color](07_Docs/codigo_colores).
 >    - Utiliza la plantilla [anotaciones_referencia](07_Docs/anotaciones_referencia.md) para extraer y organizar todas las anotaciones de los archivos `.pdf`.
+>    - **Revisión de literatura**: crea una ficha de revisión con la plantilla [ficha_revisión_literatura](07_Docs/ficha_revision_literatura.md) para sintetizar tesis, objetivos, conceptos, autores clave, citas y relevancia para la investigación. La ficha permite controlar dinámicamente **estado** y **relevancia** (`status`, `priority`) y trae campos preconfigurados para **citas APA** y **vínculo a Zotero**.
 > 2. **Fichas técnicas**
->    - Usa la información previamente clasificada para redactar fichas técnicas con la plantilla [fichas_tecnicas](07_Docs/fichas_tecnicas).
+>    - Usa la información previamente clasificada y revisada para redactar fichas técnicas con la plantilla [fichas_tecnicas](07_Docs/fichas_tecnicas). 
 > 3. **Reuniones**
 >    - Idealmente, se lleva a cabo una reunión semanal para presentar avances y asignar nuevas tareas o compromisos, documentados en la plantilla [reuniones](07_Docs/reuniones_doc.md).
 
@@ -88,21 +91,23 @@ Basado en esto, el flujo sugerido es el siguiente:
 >    - Leer las referencias en Zotero y clasificar la información en el `.pdf` de acuerdo con el [código de color](07_Docs/codigo_colores.md).
 > 2. **Creación de anotaciones**
 >    - Generar una nota utilizando la plantilla de anotaciones y vaciar en ella la información destacada durante la lectura del `.pdf`.
-> 3. **Redacción de fichas técnicas**
->    - Pasar los hallazgos relevantes a una ficha técnica para su posterior desarrollo.
-> 4. **Reunión semanal**
+> 3. **Revisión de literatura (nueva)**
+>    - Para cada referencia clave, crear una **ficha de revisión** con la plantilla `ficha_revision_literatura`. Completar tesis principal, objetivos/preguntas, conceptos/categorías, autores retomados, conclusiones, relación con el proyecto y **citas textuales en rosa** importadas desde Zotero. Controlar **estatus** y **prioridad** con los selectores integrados. :contentReference[oaicite:3]{index=3}
+> 4. **Redacción de fichas técnicas**
+>    - Tras la revisión, trasladar los hallazgos y definiciones consolidadas a una **ficha técnica** para su desarrollo, citando en formato parentético o bibliográfico según corresponda. :contentReference[oaicite:4]{index=4}
+> 5. **Reunión semanal**
 >    - Revisar el progreso, asignar nuevas tareas y registrar los acuerdos alcanzados en la plantilla correspondiente.
 
 > [!diagram]- **Diagrama del flujo de trabajo**
 > ```mermaid
 > flowchart TB
 > 
->     %% Definición de clases para nodos
+>     %% Definición de clases
 >     classDef invClass fill:#CCE5FF,stroke:#5BC0DE,color:#000,stroke-width:2px
+>     classDef revClass fill:#E8D9FF,stroke:#8E63FF,color:#000,stroke-width:2px
 >     classDef ftClass fill:#DFF0D8,stroke:#5CB85C,color:#000,stroke-width:2px
 >     classDef rClass fill:#FFEFE5,stroke:#FAAD62,color:#000,stroke-width:2px
 >     
->     %% Estilos generales para flechas
 >     linkStyle default stroke:#999999,stroke-width:1.5px,color:#333,opacity:0.8
 > 
 >     %% Subgrafo de Investigación
@@ -111,10 +116,17 @@ Basado en esto, el flujo sugerido es el siguiente:
 >         B --> C(Crear nota de anotaciones<br>con plantilla predefinida)
 >     end
 > 
+>     %% Subgrafo de Revisión de literatura (nuevo)
+>     subgraph subRev[Revisión de literatura]
+>         C --> R1(Crear ficha de revisión<br>con 'ficha_revision_literatura')
+>         R1 --> R2(Sintetizar tesis, objetivos,<br>conceptos, autores, citas)
+>         R2 --> R3(Definir relevancia y estatus<br>de la referencia)
+>     end
+> 
 >     %% Subgrafo de Fichas Técnicas
 >     subgraph subFichas[Fichas Técnicas]
->         C --> D(Vaciar resultados de la investigación<br>en fichas técnicas)
->         D --> E(Refinar / estructurar la información)
+>         R3 --> D(Vaciar resultados consolidados<br>en fichas técnicas)
+>         D --> E(Refinar / estructurar y analizar la información)
 >     end
 > 
 >     %% Subgrafo de Reuniones Semanales
@@ -127,16 +139,20 @@ Basado en esto, el flujo sugerido es el siguiente:
 >     %% Retroalimentación al inicio del flujo
 >     H --> A
 > 
->     %% Asignación de clases a nodos
+>     %% Clases
 >     class A,B,C invClass
+>     class R1,R2,R3 revClass
 >     class D,E ftClass
 >     class F,G,H rClass
 > 
->     %% (Opcional) Estilos para los subgrafos (puede no ser soportado en todas las versiones de Mermaid)
+>     %% Estilos
 >     style subInv fill:#EAF2FD,stroke:#5BC0DE,stroke-width:2px,stroke-dasharray: 5 5
+>     style subRev fill:#F2ECFF,stroke:#8E63FF,stroke-width:2px,stroke-dasharray: 5 5
 >     style subFichas fill:#F0FAF0,stroke:#5CB85C,stroke-width:2px,stroke-dasharray: 5 5
 >     style subReun fill:#FDF1EC,stroke:#FAAD62,stroke-width:2px,stroke-dasharray: 5 5
 > ```
+>
+> Este flujo incorpora una etapa explícita de **revisión** que estandariza el análisis por referencia y mejora la trazabilidad hacia las fichas técnicas y las decisiones del proyecto. 
 
 Este flujo de trabajo asegura una gestión ordenada de la información, facilita la consulta de avances y promueve la colaboración efectiva a lo largo de todo el proyecto.
 

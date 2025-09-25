@@ -1,4 +1,5 @@
 ---
+
 title: "{{title | replace('"',"'")}}"
 {%- set camelRegex = r/([a-z])([A-Z])/g %}
 {%- for type, creators in creators | groupby("creatorType") %} 
@@ -16,8 +17,26 @@ tags:
   - investigación
 creation_date: <% tp.file.creation_date("dddd Do MMMM YYYY HH:mm") %>
 temas_principales: "<%* const temas = await tp.system.prompt('Ingrese los temas principales:'); tR += temas; %>"
-tipo_texto: "<%* const tipo = await tp.system.prompt('Tipo de texto (artículo, tesis, libro, etc.):'); tR += tipo; %>"
-revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo del revisor:'); tR += revisor; %>"
+revisor: "<%*
+const FOLDER = '05_Integrantes';              // carpeta en el root
+const folder = app.vault.getAbstractFileByPath(FOLDER);
+let opciones = [];
+
+if (folder && folder.children) {
+  // solo archivos .md directamente dentro de la carpeta (no recursivo)
+  opciones = folder.children
+    .filter(f => f.extension === 'md')
+    .map(f => f.basename);
+}
+
+if (opciones.length === 0) {
+  // fallback por si no hay notas o la carpeta no existe
+  opciones = ['(No hay notas en 05_Integrantes)'];
+}
+
+const elegido = await tp.system.suggester(opciones, opciones, false, 'Selecciona revisor/a');
+tR += elegido;
+%>"
 
 ---
 
@@ -57,6 +76,7 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 
 > [!info]- ¿Cómo usar esta plantilla?
 > Esta plantilla está diseñada para sistematizar la revisión de literatura académica. Complete cada sección con la información relevante del texto analizado.
+> Para mayor información, consulta [[ficha_revision_literatura_doc]]
 
 ---
 ## :RiBook2Fill: Control de avances
@@ -80,17 +100,15 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 ## :RiProgress2Fill: Estado de compleción
 
 > [!success]- **Secciones completadas**
-> 1. [ ] Referencia bibliográfica
-> 2. [ ] Resumen del texto
-> 3. [ ] Información básica
-> 4. [ ] Planteamiento central
-> 5. [ ] Objetivos y preguntas
-> 6. [ ] Marco conceptual
-> 7. [ ] Autores citados
-> 8. [ ] Conclusiones
-> 9. [ ] Relación con la investigación
-> 10. [ ] Análisis contextual
-> 11. [ ] Citas relevantes
+> 1. [ ] Resumen del texto
+> 2. [ ] Información básica
+> 3. [ ] Objetivos y preguntas
+> 4. [ ] Marco conceptual
+> 5. [ ] Autores citados
+> 6. [ ] Conclusiones
+> 7. [ ] Relación con la investigación
+> 8. [ ] Análisis contextual
+> 9. [ ] Citas relevantes
 
 ---
 ## :LiBookmark: Referencia bibliográfica
@@ -129,8 +147,8 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 - l! **Enlace en Zotero:** [Abrir en Zotero]({{desktopURI}})
 
 ---
-## :LiFileText: Resumen del texto
 
+## :LiInfo: Información básica del documento
 
 {% if abstractNote %}
 ### Resumen original 
@@ -141,31 +159,29 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 
 ### Resumen personal:
 
-> [!info]- **Instrucciones**
-> Proporcione un resumen ejecutivo de 200-300 palabras sobre qué aborda el texto principal.
+
 
 ### Palabras clave:
 - 
 - 
 - 
 
----
-## :LiInfo: Información básica del documento
-
 ### Tema(s) principal(es):
 `= this.temas_principales`
 
 ### Tipo de texto:
-`= this.tipo_texto`
+{% if itemType %}
+{{ itemType | default('-') }}
+{% endif %}
 
 ### Idioma original:
+{% if language %}
+{{ language | default('-') }}
+{% endif %}
 
 
 ---
 ## :LiTarget: Planteamiento central del texto
-
-> [!info]- **Instrucciones**
-> Describa la tesis principal o argumento central que desarrolla el autor/a.
 
 ### Tesis principal:
 
@@ -175,8 +191,6 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 ---
 ## :LiSearch: Objetivos y/o preguntas de investigación
 
-> [!info]- **Instrucciones**
-> Liste los objetivos principales y las preguntas de investigación que guían el texto.
 
 ### Objetivo general:
 
@@ -194,8 +208,6 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 ---
 ## :LiNetwork: Categorías y/o conceptos centrales
 
-> [!info]- **Instrucciones**
-> Identifique y defina los conceptos clave que estructuran el texto.
 
 ### Conceptos principales:
 
@@ -213,9 +225,6 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 ---
 ## :LiUsers: Autores/as que retoma para hablar del tema central
 
-> [!info]- **Instrucciones**
-> Liste los autores principales citados y cómo contribuyen al argumento.
-
 ### Autores fundamentales:
 
 | Autor/a | Obra citada | Aporte al argumento |
@@ -227,8 +236,6 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 ---
 ## :LiCheckSquare: Conclusiones y/o resultados de la investigación
 
-> [!info]- **Instrucciones**
-> Sintetice las conclusiones principales y hallazgos del texto.
 
 ### Conclusiones principales:
 1. 
@@ -242,9 +249,6 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 
 ---
 ## :LiLink: Relación del artículo con el tema general de la investigación
-
-> [!info]- **Instrucciones**
-> Explique cómo este texto se relaciona con su investigación actual.
 
 ### Relevancia para mi investigación:
 
@@ -260,9 +264,6 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 ## :LiMessageSquare: Preguntas y comentarios al texto
 
 ### ¿En qué contexto se sitúa el texto?
-
-> [!info]- **Instrucciones**
-> Describa el contexto histórico, geográfico, político o académico del texto.
 
 #### Contexto histórico:
 
@@ -305,9 +306,6 @@ revisor: "<%* const revisor = await tp.system.prompt('Ingrese el nombre completo
 
 ---
 ## :LiPencil: Notas adicionales y reflexiones personales
-
-> [!info]- **Instrucciones**
-> Espacio libre para reflexiones, ideas emergentes o conexiones con otros textos.
 
 ### Reflexiones:
 
