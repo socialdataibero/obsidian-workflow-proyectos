@@ -17,6 +17,14 @@
   ],
   "exportFormats": [
     {
+      "name": "Import_review_will",
+      "outputPathTemplate": "01_Proyecto/Revision_Literatura/{{citekey}}.md",
+      "imageOutputPathTemplate": "{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "02_Recursos/Plantillas/ficha_revision_literatura_will.md",
+      "cslStyle": "apa"
+    },
+    {
       "name": "Import_review",
       "outputPathTemplate": "01_Proyecto/Revision_Literatura/{{citekey}}.md",
       "imageOutputPathTemplate": "{{citekey}}/",

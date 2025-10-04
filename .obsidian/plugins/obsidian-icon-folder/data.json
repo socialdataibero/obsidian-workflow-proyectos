@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": "#ef4044",
     "recentlyUsedIcons": [
+      "👨",
+      "🤦",
       "FasStreetView",
       "LiBookText",
-      "RiSlideshowFill",
-      "LiLogs",
-      "FasBatteryThreeQuarters"
+      "RiSlideshowFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -60,5 +60,6 @@
   "02_Recursos/Plantillas/bitacora.md": "LiLogs",
   "01_Proyecto/Presentaciones": "RiSlideshowFill",
   "01_Proyecto/Revision_Literatura": "LiBookText",
-  "02_Recursos/Plantillas/ficha_revision_literatura.md": "FasStreetView"
+  "02_Recursos/Plantillas/ficha_revision_literatura.md": "FasStreetView",
+  "02_Recursos/Plantillas/ficha_revision_literatura_will.md": "👨"
 }
